@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dyna'Mix</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/DYNA_MIX_logo_seul_sans_bg_petit.png" alt="Dyna'Mix Logo">
+            <p class="logo-text">DYNA'<span>MIX</span></p>
+        </div>
+        <!-- <h1>Welcome to Dyna'Mix</h1> -->
+        <nav>
+            <ul>
+                <li><a href="#home">Formulaire</a></li>
+                <li><a href="#Statistiques">Statistiques</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <section id="formualaire">
+            <h1>Ajouter une activité</h1>
+            <form action="index.php" method="post">
+                <label for="name">Titre</label>
+                <input type="text" name="name" id="name" required>
+                <label for="adress">Adresse</label>
+                <input type="text" name="adress" id="adress" required>
+                <label for="start-date">Date de début</label>
+                <input type="date" name="start-date" id="start-date" required>
+                
+                <label for="end-date">Date de fin</label>
+                <input type="date" name="end-date" id="end-date" required>
+                
+                <label for="participants">Nombre de participants</label>
+                <input type="number" name="participants" id="participants" required>
+                
+                <label for="guide">Nom du guide</label>
+                <input type="text" name="guide" id="guide" required>
+                
+                <label for="description">Description/Note</label>
+                <textarea name="description" id="description" required></textarea>
+                
+                <label for="rating">Appréciation</label>
+                <input type="number" name="rating" id="rating" min="1" max="5" required>
+                
+                <button type="submit">Confirmer</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
