@@ -8,7 +8,6 @@ body {
 /* Header Styles */
 header {
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center; /* Center the content */
     padding: 10px 20px;
@@ -30,7 +29,6 @@ header {
     font-size: 30px;
     font-weight: bold;
     color: #333; /* Adjust the color as needed */
-    font-family: Oswald, sans-serif;
     margin: 5px;
 }
 
@@ -75,14 +73,16 @@ nav p {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     padding: 24px;
     width: 100%;
-    max-width: 400px;
-    margin: 16px auto;
+    max-width: 500px;
+    margin: 16px;
+    box-sizing: border-box; /* Ensure padding is included in the width */
 }
 
 #formualaire h1 {
     font-size: 24px;
     margin-bottom: 16px;
     color: #333;
+    text-align: left;
 }
 
 #formualaire label {
@@ -104,6 +104,7 @@ nav p {
     font-size: 14px;
     border: none;
     text-align: left;
+    box-sizing: border-box; /* Ensure padding is included in the width */
 }
 
 #formualaire input[type="number"] {
